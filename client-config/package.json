@@ -23,8 +23,20 @@
     "template-typescript",
     "utils"
   ],
+   "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
   "bin": {
     "react-scripts": "./bin/react-scripts.js"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "types": "./lib/react-app.d.ts",
   "dependencies": {
@@ -85,11 +97,31 @@
     "webpack": "4.44.2",
     "webpack-dev-server": "3.11.0",
     "webpack-manifest-plugin": "2.2.0",
-    "workbox-webpack-plugin": "5.1.4"
+    "workbox-webpack-plugin": "5.1.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "@types/jest": "^26.0.17",
+    "@types/node": "^14.14.11",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "simple-peer": "^9.9.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "@types/simple-peer": "^9.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-react": "^7.21.5",
+    "prettier": "^2.2.1"
   },
   "optionalDependencies": {
     "fsevents": "^2.1.3"
